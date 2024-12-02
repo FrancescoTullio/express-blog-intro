@@ -5,7 +5,7 @@ const port = 3000;
 
 import postBlog from "./models/post.js"
 
-
+app.use(express.static("public"));
 //  console.log(postBlog);
 app.get(`/`, (req, res) => {
     res.send("hello world!")
